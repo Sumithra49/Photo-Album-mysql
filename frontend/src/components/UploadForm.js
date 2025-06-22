@@ -20,7 +20,7 @@ const UploadForm = ({ onUpload }) => {
     formData.append('photo', photo);
 
     try {
-      await axios.post('http://localhost:8080/api/photos/upload', formData);
+      await axios.post('https://photo-album-mysql.onrender.com/api/photos/upload', formData);
       alert('Photo uploaded!');
       onUpload(); 
       setTitle('');

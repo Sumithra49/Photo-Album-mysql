@@ -6,7 +6,7 @@ const PhotoGallery = () => {
 
   const fetchPhotos = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/photos');
+      const res = await axios.get('https://photo-album-mysql.onrender.com/api/photos');
       setPhotos(res.data);
     } catch (err) {
       console.error('Error fetching photos', err);
@@ -17,7 +17,7 @@ const PhotoGallery = () => {
     if (!window.confirm('Delete this photo?')) return;
 
     try {
-      await axios.delete(`http://localhost:8080/api/photos/${id}`);
+      await axios.delete(`https://photo-album-mysql.onrender.com/api/photos/${id}`);
       fetchPhotos(); 
     } catch (err) {
       console.error('Delete failed', err);
@@ -32,7 +32,7 @@ const PhotoGallery = () => {
     <div style={galleryStyle}>
       {photos.map(photo => (
         <div key={photo.id} style={cardStyle}>
-          <img src={`http://localhost:8080${photo.image_url}`} alt={photo.title} style={imgStyle} />
+          <img src={`https://photo-album-mysql.onrender.com${photo.image_url}`} alt={photo.title} style={imgStyle} />
           <h3>{photo.title}</h3>
           <p>{photo.description}</p>
           <button onClick={() => deletePhoto(photo.id)} style={delBtn}> Delete</button>
