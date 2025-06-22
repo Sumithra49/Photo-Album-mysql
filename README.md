@@ -34,10 +34,10 @@ A full-stack web application that allows users to upload, view, and delete photo
 - DB_PORT=3306
 - PORT=8080
 - | Method | Endpoint             | Description          |<br>
-| ------ | -------------------- | -------------------- |
-| GET    | `/api/photos`        | Get all photos       |
-| POST   | `/api/photos/upload` | Upload a new photo   |
-| DELETE | `/api/photos/:id`    | Delete a photo by ID |
+| ------ | -------------------- | -------------------- ||<br>
+| GET    | `/api/photos`        | Get all photos       ||<br>
+| POST   | `/api/photos/upload` | Upload a new photo   ||<br>
+| DELETE | `/api/photos/:id`    | Delete a photo by ID ||<br>
 
 
 # UI
