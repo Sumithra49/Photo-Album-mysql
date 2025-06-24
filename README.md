@@ -7,7 +7,8 @@ A full-stack web application that allows users to upload, view, and delete photo
 
 # Folder Structure
 ![image](https://github.com/user-attachments/assets/982d63d7-7f5c-41a3-abcb-7613f9c14df1)
-![image](https://github.com/user-attachments/assets/a377c6b5-138c-42bd-b1d5-6cd8f79d448e)
+![image](https://github.com/user-attachments/assets/c2027054-97ab-4dd4-89d8-1c3b0f4dd55f)
+
 
 
 
@@ -42,6 +43,16 @@ A full-stack web application that allows users to upload, view, and delete photo
 | GET    | `/api/photos`        | Get all photos       ||<br>
 | POST   | `/api/photos/upload` | Upload a new photo   ||<br>
 | DELETE | `/api/photos/:id`    | Delete a photo by ID ||<br>
+## 🛠 Export MySQL Database (optional)
+
+To export your database safely using `mysqldump`:
+
+```bash
+mysqldump --set-gtid-purged=OFF --single-transaction \
+  -h <your_host> \
+  -u <your_username> \
+  -p <your_database_name> > db-export.sql
+
 
 
 # UI
