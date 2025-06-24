@@ -1,6 +1,10 @@
 # Photo-Album-mysql
 A full-stack web application that allows users to upload, view, and delete photos. Built using React on the frontend and Node.js + Express + MySQL + Sequelize on the backend.
 
+# Deployment links
+- backend:https://photo-album-mysql.onrender.com
+- frontend:https://photo-album-mysql.vercel.app/
+
 # Folder Structure
 ![image](https://github.com/user-attachments/assets/982d63d7-7f5c-41a3-abcb-7613f9c14df1)
 ![image](https://github.com/user-attachments/assets/a377c6b5-138c-42bd-b1d5-6cd8f79d448e)
