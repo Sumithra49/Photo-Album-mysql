@@ -3,7 +3,7 @@ A full-stack web application that allows users to upload, view, and delete photo
 
 # Deployment links
 - backend:https://photo-album-mysql-1.onrender.com
-- frontend:https://photo-album-mysql.vercel.app/
+- frontend:https://photo-album-mysql-rspe.vercel.app/
 
 # Folder Structure
 ![image](https://github.com/user-attachments/assets/982d63d7-7f5c-41a3-abcb-7613f9c14df1)
