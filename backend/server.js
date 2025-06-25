@@ -13,9 +13,9 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-connectionToDb(); // ✅ Call DB connection check
+connectionToDb(); 
 
-sequelize.sync({ alter: true }) // ✅ Auto-create tables
+sequelize.sync({ alter: true }) 
   .then(() => {
     console.log("✅ Tables synced with Clever Cloud DB");
   })
