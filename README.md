@@ -2,7 +2,7 @@
 A full-stack web application that allows users to upload, view, and delete photos. Built using React on the frontend and Node.js + Express + MySQL + Sequelize on the backend.
 
 # Deployment links
-- backend:https://photo-album-mysql.onrender.com
+- backend:https://photo-album-mysql-1.onrender.com
 - frontend:https://photo-album-mysql.vercel.app/
 
 # Folder Structure
@@ -42,6 +42,7 @@ A full-stack web application that allows users to upload, view, and delete photo
 | ------ | -------------------- | -------------------- ||<br>
 | GET    | `/api/photos`        | Get all photos       ||<br>
 | POST   | `/api/photos/upload` | Upload a new photo   ||<br>
+|PUT     | /api/photos/:id      | Edit the existing photo | <br>
 | DELETE | `/api/photos/:id`    | Delete a photo by ID ||<br>
 ## 🛠 Export MySQL Database (optional)
 
@@ -57,6 +58,8 @@ mysqldump --set-gtid-purged=OFF --single-transaction \
 
 # UI
 ![image](https://github.com/user-attachments/assets/9e41cf78-06a8-4aae-b638-84d68e3839b4)
+# Edit feature
+![image](https://github.com/user-attachments/assets/6dafea54-4677-4881-910d-7b0235f96342)
 
 
 
