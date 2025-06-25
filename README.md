@@ -47,7 +47,7 @@ A full-stack web application that allows users to upload, view, and delete photo
 
 To export your database safely using `mysqldump`:
 
-```bash
+
 mysqldump --set-gtid-purged=OFF --single-transaction \
   -h <your_host> \
   -u <your_username> \
@@ -56,6 +56,8 @@ mysqldump --set-gtid-purged=OFF --single-transaction \
 
 
 # UI
-![image](https://github.com/user-attachments/assets/46d205b4-11c7-468e-9c39-656471acef7f)
+![image](https://github.com/user-attachments/assets/9e41cf78-06a8-4aae-b638-84d68e3839b4)
+
+
 
 
