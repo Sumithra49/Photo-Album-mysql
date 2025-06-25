@@ -12,7 +12,7 @@ const PhotoGallery = () => {
 
   const fetchPhotos = async () => {
     try {
-      const res = await axios.get('http://localhost:9000/api/photos');
+      const res = await axios.get('https://photo-album-mysql-1.onrender.com/api/photos');
       setPhotos(res.data);
     } catch (err) {
       console.error(err);
@@ -23,7 +23,7 @@ const PhotoGallery = () => {
     if (!window.confirm('Are you sure you want to delete this photo?')) return;
 
     try {
-      await axios.delete(`http://localhost:9000/api/photos/${id}`);
+      await axios.delete(`https://photo-album-mysql-1.onrender.com/api/photos/${id}`);
       fetchPhotos();
     } catch (err) {
       console.error(err);
@@ -57,7 +57,7 @@ const PhotoGallery = () => {
     }
 
     try {
-      await axios.put(`http://localhost:9000/api/photos/${id}`, formData);
+      await axios.put(`https://photo-album-mysql-1.onrender.com/api/photos/${id}`, formData);
       setEditingId(null);
       fetchPhotos();
     } catch (err) {
@@ -99,7 +99,7 @@ const PhotoGallery = () => {
           ) : (
             <>
               <img
-                src={`http://localhost:9000${photo.image_url}`}
+                src={`https://photo-album-mysql-1.onrender.com${photo.image_url}`}
                 alt={photo.title}
                 style={styles.image}
               />
