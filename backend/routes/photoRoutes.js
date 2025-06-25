@@ -22,16 +22,16 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// GET all photos
+
 router.get('/', getPhotos);
 
-// POST upload a new photo
+
 router.post('/upload', upload.single('photo'), uploadPhoto);
 
-// PUT update a photo (title/desc and optionally image)
+
 router.put('/:id', upload.single('photo'), updatePhoto);
 
-// DELETE a photo
+
 router.delete('/:id', deletePhoto);
 
 module.exports = router;
